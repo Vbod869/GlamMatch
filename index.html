@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaya Makeup & Padanan Busana Sempurna</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GlamMatch</div>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#gallery">Galeri Gaya</a></li>
+                <li><a href="#tips">Tips & Trik</a></li>
+                <li><a href="#quiz">Quiz Gaya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Temukan Gaya Makeup & Busana Sempurnamu</h1>
+            <p>Panduan lengkap untuk tampil memukau dalam berbagai kesempatan</p>
+            <a href="#gallery" class="cta-button">Jelajahi Gaya</a>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Galeri Gaya Makeup & Busana</h2>
+            <div class="makeup-grid" id="makeupGallery">
+                <!-- Makeup looks will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="tips" class="tips">
+            <h2>Tips & Trik Kecantikan</h2>
+            <div class="tips-container">
+                <div class="tip">
+                    <h3>Pilih Foundation yang Tepat</h3>
+                    <p>Pastikan untuk memilih warna foundation yang sesuai dengan tone kulitmu. Tes di bagian rahang untuk hasil yang paling akurat.</p>
+                </div>
+                <div class="tip">
+                    <h3>Sesuaikan Makeup dengan Acara</h3>
+                    <p>Gunakan makeup natural untuk acara siang hari dan lebih bold untuk acara malam. Sesuaikan juga dengan formalitas acara.</p>
+                </div>
+                <div class="tip">
+                    <h3>Padukan Warna Makeup dan Busana</h3>
+                    <p>Pilih warna eyeshadow atau lipstik yang melengkapi atau kontras dengan warna busanamu untuk tampilan yang harmonis.</p>
+                </div>
+                <div class="tip">
+                    <h3>Jangan Lupa Skincare</h3>
+                    <p>Makeup akan terlihat lebih baik pada kulit yang terawat. Rutinkan cleansing, toning, dan moisturizing sebelum makeup.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="quiz">
+            <h2>Quiz Gaya Personalmu</h2>
+            <p>Temukan gaya makeup dan busana yang paling cocok untukmu!</p>
+            <button id="startQuiz" class="cta-button">Mulai Quiz</button>
+            <div id="quizContainer" style="display: none;">
+                <!-- Quiz questions will be dynamically added here -->
+            </div>
+            <div id="quizResult" style="display: none;">
+                <!-- Quiz result will be shown here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang GlamMatch</h3>
+                <p>GlamMatch adalah panduan lengkap untuk menemukan gaya makeup dan busana yang sempurna untukmu.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak Kami</h3>
+                <p>Email: info@glammatch.com</p>
+                <p>Telepon: (021) 1234-5678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GlamMatch. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('active');
+    });
+    </script>
+</body>
+</html>
